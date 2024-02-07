@@ -191,6 +191,10 @@ section {
     padding-bottom: 20px;
 }
 
+.portfolio-item img {
+    width: 20rem;
+}
+
 #contact h2 {
     background-color: #e9c46a;
 }

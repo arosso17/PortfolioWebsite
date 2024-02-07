@@ -82,6 +82,8 @@ function draw() {
       const y1 = neighbors[j].y;
       const dist = getDist(x, y, x1, y1);
       if (dist < 200) {
+        ctx.lineWidth = dist / 200
+        ctx.strokeStyle = "rgba(5,255,255," + dist / 1000 + ")";
         ctx.beginPath();
         ctx.moveTo(x, y);
         ctx.lineTo(x1, y1);

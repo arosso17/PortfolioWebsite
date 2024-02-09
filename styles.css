@@ -26,6 +26,7 @@ project-type-heading {
     border-radius: 10px;
     margin: 10px;
     max-width: 22rem;
+    height: fit-content;
 }
 
 project-type-heading h {
@@ -133,19 +134,25 @@ nav {
 }
 
 header nav.show {
-    color: transparent
+    color: transparent;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    display: inline;
+    /* display: inline; */
     margin-right: 10px;
     margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
 }
 
 nav ul li a {
@@ -155,12 +162,13 @@ nav ul li a {
     padding: 3px 5px;
     border: 1px solid #e76f51;
     border-radius: 3px;
+    height: fit-content;
+    width: fit-content;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
     background-color: #e76f51;
-    padding: 4px 6px;
 }
 
 nav img {
@@ -214,6 +222,12 @@ section {
     background-color: #e9c46a;
 }
 
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #heroCanvas {
     top: 0;
     left: 0;
@@ -250,10 +264,9 @@ footer {
     color: #fff;
     text-align: center;
     padding: 15px 0;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    margin-left: -10px;
+    /* position: fixed; */
+    width: calc(100% + 20px);
 }
 
 .section-divider {
@@ -263,4 +276,35 @@ footer {
     margin: 20px 0;
     border-radius: 5px;
     display: none;
+}
+
+.p5js {
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 5px solid #e76f51;
+}
+
+.p5js h2 {
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+    /* border: 5px solid #e76f51; */
+}
+
+main {
+    align-content: center;
+    align-items: center;
+    /* margin: auto; */
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* background-color: #000; */
 }

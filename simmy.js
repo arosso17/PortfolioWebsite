@@ -7,14 +7,14 @@ function toggleNavVisibility(b) {
     }
 }
 
-function toggleFootVisibility() {
-    var foot = document.querySelector('footer');
-    if (window.scrollY > 0) {
-        foot.style.display = 'block';
-    } else {
-        foot.style.display = 'none';
-    }
-}
+// function toggleFootVisibility() {
+//     var foot = document.querySelector('footer');
+//     if (window.scrollY > 0) {
+//         foot.style.display = 'block';
+//     } else {
+//         foot.style.display = 'none';
+//     }
+// }
 
 // Add event listener for scroll event to toggle navigation visibility
 window.addEventListener('mousemove', function (event) {
@@ -35,5 +35,5 @@ window.addEventListener('scroll', function (event) {
     }
 });
 
-window.addEventListener('scroll', toggleFootVisibility);
-window.addEventListener('DOMContentLoaded', toggleFootVisibility);
+// window.addEventListener('scroll', toggleFootVisibility);
+// window.addEventListener('DOMContentLoaded', toggleFootVisibility);

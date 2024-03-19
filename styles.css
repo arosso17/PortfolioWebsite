@@ -1,5 +1,9 @@
 /* styles.css */
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Reset default margin and padding */
 body, h1, h2, h3, p, ul {
     margin: 0;
